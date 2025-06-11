@@ -5,7 +5,7 @@ const GarantiaDeAprendizaje = () => {
         <div className="container my-5">
             <div className="row">
                 <div className="col-md-5 offset-md-2">
-                    <img src={learning} alt="Certificado" className="img-fliud" />
+                    <img src={learning} alt="Certificado" className="img-fluid" />
                 </div>
                 <div className="col-md-4">
                     <h2 className="titulo fw-bold">Garantía de aprendizaje</h2>

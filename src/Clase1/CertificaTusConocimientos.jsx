@@ -12,6 +12,12 @@ const CertificaTusConocimientos = () =>{
                     <img src="/images/certificado.svg" alt="Certificado" width={320}/>
                 </div>
             </div>
+
+            <div className="mt-4">
+                <button type="button" className="btn btn-success me-2">Cerrar</button>
+                <button type="button" className="btn btn-primary" disabled>Cerrar</button>
+            </div>
+
         </div>
     )
 }
