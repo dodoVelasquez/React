@@ -1,8 +1,10 @@
-const Props = (objeto) => {
+//const Props = (objeto) => { //prop
+const Props = ({texto1, texto2, edad}) => { //Desestructuracion
 
     return (
         <>
-        <p>{objeto.texto1} - {objeto.texto2} - {objeto.edad}</p>
+            {/* <h>{texto1.toUpperCase()} - {texto2} - {edad + 10}</h> */}
+            <h>{texto1.toUpperCase()} - {texto2} - {edad + 10}</h>
         </>
     )
 }
