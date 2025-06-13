@@ -1,4 +1,8 @@
 const Clase3 = () => {
-    return (<>
-    </>);
+    return (
+        <>
+        </>
+    );
 }
+
+export default Clase3;
