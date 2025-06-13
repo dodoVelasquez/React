@@ -18,6 +18,7 @@ function App() {
   );
 } */
 
+  
 // Clase 2
 import Renderizacion from "./Clase2/Renderizacion";
 import Props from "./Clase2/Props";
