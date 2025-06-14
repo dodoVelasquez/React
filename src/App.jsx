@@ -18,20 +18,36 @@ function App() {
   );
 } */
 
-  
+
 // Clase 2
 import Renderizacion from "./Clase2/Renderizacion";
 import Props from "./Clase2/Props";
 import States from "./Clase2/States";
 import Eventos from "./Clase2/Eventos";
+import CicloDeVida from "./Clase2/CicloDeVida";
+import { useState } from "react";
+import Desafio1 from "./Clase2/Desafios/Desafio1";
+import Desafio2 from "./Clase2/Desafios/Desafio2";
 
 function App() {
+  /* Desmotaje de componente */
+  // const [visible, setVisible] = useState(true);
+  // const desmontarComponente = () => {
+  //   setVisible(false);
+  // }
+
   return (
     <>
       {/* <Renderizacion /> */}
       {/* <Props texto1={"Hola"} texto2={"como estas?"} edad={30} /> */}
       {/* <States/> */}
-      <Eventos/>
+      {/* <Eventos/> */}
+      {/* <CicloDeVida />
+      <h2>Desmotaje de Componente</h2>
+      {visible ? <CicloDeVida /> : ""}
+      <button className="btn btn-secondary" onClick={desmontarComponente}>Desmontar Componente</button> */}
+      {/* <Desafio1/> */}
+      <Desafio2/>
     </>
   );
 }
