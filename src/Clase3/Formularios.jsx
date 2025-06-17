@@ -1,4 +1,8 @@
 const Formularios = () => {
+    const [nombre, setNombre] = useState("");
+    const [email, setEmail] = useState("");
+    const [telefono, setTelefono] = useState("")
+
     return (
         <div className="container">
             <div className="row">
