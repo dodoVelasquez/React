@@ -52,8 +52,7 @@ function App() {
   );
 }*/
 
-
-// Clase 3
+/*// Clase 3
 import Calculator from "./Clase3/Calculator";
 import Formularios from "./Clase3/Formularios";
 import Renderizado from "./Clase3/Renderizado";
@@ -61,11 +60,63 @@ import Renderizado from "./Clase3/Renderizado";
 function App() {
   return (
     <>
-      {/*<Calculator />*/}
-      {/* <Formularios/> */}
+      {<Calculator />}
+      { <Formularios/>}
       <Renderizado/>
     </>
   );
 }
+export default App;*/
 
+
+//Clase 4 - Routing
+import EnFamilia from "./Clase4/EnFamilia.jsx"
+import Error404 from "./Clase4/Error404.jsx"
+import NavBar from "./Clase4/NavBar.jsx"
+import Producto from "./Clase4/Producto.jsx"
+import Productos from "./Clase4/Productos.jsx"
+import { BrowserRouter, Routes, Route, useRoutes } from "react-router-dom"
+function App() {
+
+  // const routes = useRoutes([
+  //   {
+  //     path: "/",
+  //     element: <Productos />
+  //   },
+  //   {
+  //     path: "/productos",
+  //     element: <Productos />
+  //   },
+  //   {
+  //     path: "/productos/:id",
+  //     element: <Productos />
+  //   },
+  //   {
+  //     path: "/en-familia",
+  //     element: <EnFamilia />
+  //   }
+  // ]);
+
+  // return (
+  //   <>
+  //     <NavBar />
+  //     {routes}
+  //   </>
+  // )
+
+  return (
+    <>
+
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Productos />} />
+        <Route path="/productos" element={<Productos />} />
+        <Route path="/productos/:id" element={<Productos />} />
+        <Route path="/producto/:id" element={<Producto />} />
+        <Route path="/en-familia/" element={<EnFamilia />} />
+        <Route path="*" element={<Error404 />} />
+      </Routes>
+    </>
+  );
+}
 export default App;

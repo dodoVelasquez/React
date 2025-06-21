@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "nombre": "Bacon Cheddar McMelt",
+        "descripcion": "½ Libra de carne de res, acompañada con tocino, dos rebanadas de queso, deliciosa salsa de queso, cebolla caramelizada y pan con ajonjolí.",
+        "precio": 65,
+        "imagen": "https://mcdonalds.com.gt/storage/menu-products/1749753077_PNG%20Website%20corporativo%20640x640%20(2).png",
+        "categoria": "hamburguesas",
+        "verduras": "true",
+        "salsa": "false",
+        "queso":"no",
+        "slug": "Bacon-Cheddar-McMelt"
+    },
+    {
+        "id": 2,
+        "nombre": "Big Tasty Tocino",
+        "descripcion": "Deliciosa hamburguesas en un pan con ajonjolí, con una torta 100% de res, cebolla, lechuga, dos rodajas de tomate, tres rodajas de queso tipo emmental, y tiras de tocino acompañado con su especial aderezo Tasty.",
+        "precio": 70,
+        "imagen": "https://mcdonalds.com.gt/storage/menu-products/1640813826_1.Big%20tasty%20tocino.jpg",
+        "categoria": "sandwiches-de-pollo",
+        "verduras": "true",
+        "salsa": "false",
+        "queso":"no",
+        "slug": "Big-Tasty-Tocino"
+        
+    },
+    {
+        "id": 3,
+        "nombre": "Big Tasty Doble",
+        "descripcion": "Deliciosa hamburguesas en un pan con ajonjolí, dos tortas 100% carne de res, cebolla, lechuga, dos rodajas de tomate, tres rodajas de queso emmental,acompañado con un espectacular aderezo Tasty, que le da un sabor único",
+        "precio": 60,
+        "imagen": "https://mcdonalds.com.gt/storage/menu-products/1640814060_2.big%20tasty%20doble.jpg",
+        "categoria": "hamburguesas",
+        "verduras": "false",
+        "salsa": "false",
+        "queso":"si",
+        "slug": "Big-Tasty-Doble"
+    },
+    {
+        "id": 4,
+        "nombre": "Big Tasty",
+        "descripcion": "Deliciosa hamburguesas en un pan con ajonjolí, con una torta 100% de res, cebolla, lechuga, dos rodajas de tomate, tres rodajas de queso tipo emmental, acompañado de su especial aderezo Tasty.",
+        "precio": 65,
+        "imagen": "https://mcdonalds.com.gt/storage/menu-products/1640814187_3.Big%20Tasty.jpg",
+        "categoria": "hamburguesas",
+        "verduras": "true",
+        "salsa": "true",
+        "queso":"no",
+        "slug": "Big-Tasty"
+    }
+]
