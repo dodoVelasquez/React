@@ -70,13 +70,13 @@ export default App;*/
 
 
 //Clase 4 - Routing
-import EnFamilia from "./Clase4/EnFamilia.jsx"
-import Error404 from "./Clase4/Error404.jsx"
-import NavBar from "./Clase4/NavBar.jsx"
-import Producto from "./Clase4/Producto.jsx"
-import Productos from "./Clase4/Productos.jsx"
-import { BrowserRouter, Routes, Route, useRoutes } from "react-router-dom"
-function App() {
+// import EnFamilia from "./Clase4/EnFamilia.jsx"
+// import Error404 from "./Clase4/Error404.jsx"
+// import NavBar from "./Clase4/NavBar.jsx"
+// import Producto from "./Clase4/Producto.jsx"
+// import Productos from "./Clase4/Productos.jsx"
+// import { BrowserRouter, Routes, Route, useRoutes } from "react-router-dom"
+// function App() {
 
   // const routes = useRoutes([
   //   {
@@ -96,7 +96,6 @@ function App() {
   //     element: <EnFamilia />
   //   }
   // ]);
-
   // return (
   //   <>
   //     <NavBar />
@@ -104,19 +103,99 @@ function App() {
   //   </>
   // )
 
+//   return (
+//     <>
+//       <NavBar />
+//       <Routes>
+//         <Route path="/" element={<Productos />} />
+//         <Route path="/productos" element={<Productos />} />
+//         <Route path="/productos/:id" element={<Productos />} />
+//         <Route path="/producto/:id" element={<Producto />} />
+//         <Route path="/en-familia/" element={<EnFamilia />} />
+//         <Route path="*" element={<Error404 />} />
+//       </Routes>
+//     </>
+//   );
+// }
+// export default App;
+
+
+// //clase 5
+// import EnFamilia from "./Clase4/EnFamilia.jsx"
+// import Error404 from "./Clase4/Error404.jsx"
+// import NavBar from "./Clase4/NavBar.jsx"
+// import Producto from "./Clase4/Producto.jsx"
+// import Productos from "./Clase4/Productos.jsx"
+// import { BrowserRouter, Routes, Route, useRoutes } from "react-router-dom"
+// import PostList from "./Clase5/PostList.jsx"
+// import Layout from "./Clase5/Layout.jsx"
+// import ThemeContextProvider from "./Clase5/context/ThemeContext.jsx"
+// import Footer from "./Clase4/Footer.jsx"
+// import Banner from "./Clase5/Banner.jsx"
+// import PostsList2 from "./Clase5/PostList2.jsx"
+
+// function App() {  
+//   return (
+//     <>
+//       {/* <ThemeContextProvider>
+//         <NavBar />
+//         <Routes>
+//           <Route path="/" element={<Productos />} />
+//           <Route path="/productos" element={<Productos />} />
+//           <Route path="/productos/:id" element={<Productos />} />
+//           <Route path="/producto/:id" element={<Producto />} />
+//           <Route path="/en-familia/" element={<EnFamilia />} />
+//           <Route path="*" element={<Error404 />} />
+//         </Routes>
+//         <Banner>Recibí tu pedido o retiralo en el restaurante que prefieras</Banner>
+//         <Footer />
+//       </ThemeContextProvider> */}
+
+//       {/* <Layout darkMode={true}>
+//         <h1>Educaciónt IT</h1>
+//         <h3>Curso de React JS</h3>
+//         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem eaque, vero est iusto consequatur sit eos itaque reiciendis reprehenderit et, dicta, officia ipsa accusantium at ipsam cumque earum quibusdam recusandae!</p>
+//       </Layout> */}
+//       {/* <PostList /> */}
+//       <PostsList2 />
+//     </>
+//   )
+// }
+
+// export default App
+
+//Clase 6
+import EnFamilia from "./Clase4/EnFamilia.jsx"
+import Error404 from "./Clase4/Error404.jsx"
+import NavBar from "./Clase4/NavBar.jsx"
+import Producto from "./Clase4/Producto.jsx"
+import Productos from "./Clase4/Productos.jsx"
+import { Routes, Route} from "react-router-dom"
+import ThemeContextProvider from "./Clase5/context/ThemeContext.jsx"
+import Footer from "./Clase4/Footer.jsx"
+import APIXML from "./Clase6/APIXML.jsx"
+import APIFetch from "./Clase6/APIFetch.jsx"
+import APIAxios from "./Clase6/APIAxios.jsx"
+
+function App() {  
   return (
     <>
-
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<Productos />} />
-        <Route path="/productos" element={<Productos />} />
-        <Route path="/productos/:id" element={<Productos />} />
-        <Route path="/producto/:id" element={<Producto />} />
-        <Route path="/en-familia/" element={<EnFamilia />} />
-        <Route path="*" element={<Error404 />} />
-      </Routes>
+      <ThemeContextProvider>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Productos />} />
+          <Route path="/productos" element={<Productos />} />
+          <Route path="/productos/:id" element={<Productos />} />
+          <Route path="/producto/:id" element={<Producto />} />
+          <Route path="/en-familia/" element={<EnFamilia />} />
+          <Route path="*" element={<Error404 />} />
+        </Routes>
+        <APIXML/>
+        <APIFetch />
+        <APIAxios/>
+        <Footer />
+      </ThemeContextProvider>
     </>
-  );
+  )
 }
 export default App;
