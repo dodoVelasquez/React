@@ -165,7 +165,7 @@ export default App;*/
 // export default App
 
 //Clase 6
-import EnFamilia from "./Clase4/EnFamilia.jsx"
+/*import EnFamilia from "./Clase4/EnFamilia.jsx"
 import Error404 from "./Clase4/Error404.jsx"
 import NavBar from "./Clase4/NavBar.jsx"
 import Producto from "./Clase4/Producto.jsx"
@@ -176,7 +176,7 @@ import Footer from "./Clase4/Footer.jsx"
 import APIXML from "./Clase6/APIXML.jsx"
 import APIFetch from "./Clase6/APIFetch.jsx"
 import APIAxios from "./Clase6/APIAxios.jsx"
-
+import Contador from "./Clase7/Contador.jsx"
 function App() {  
   return (
     <>
@@ -190,6 +190,46 @@ function App() {
           <Route path="/en-familia/" element={<EnFamilia />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
+        <Contador/>
+        <APIXML/>
+        <APIFetch />
+        <APIAxios/>
+        <Footer />
+      </ThemeContextProvider>
+    </>
+  )
+}
+export default App;*/
+
+//Clase 7
+import EnFamilia from "./Clase4/EnFamilia.jsx"
+import Error404 from "./Clase4/Error404.jsx"
+import NavBar from "./Clase4/NavBar.jsx"
+import Producto from "./Clase4/Producto.jsx"
+import Productos from "./Clase4/Productos.jsx"
+import { Routes, Route} from "react-router-dom"
+import ThemeContextProvider from "./Clase5/context/ThemeContext.jsx"
+import Footer from "./Clase4/Footer.jsx"
+import APIXML from "./Clase6/APIXML.jsx"
+import APIFetch from "./Clase6/APIFetch.jsx"
+import APIAxios from "./Clase6/APIAxios.jsx"
+import Contador from "./Clase7/Contador.jsx"
+import Tareas from "./Clase7/Tareas.jsx"
+function App() {  
+  return (
+    <>
+      <ThemeContextProvider>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Productos />} />
+          <Route path="/productos" element={<Productos />} />
+          <Route path="/productos/:id" element={<Productos />} />
+          <Route path="/producto/:id" element={<Producto />} />
+          <Route path="/en-familia/" element={<EnFamilia />} />
+          <Route path="*" element={<Error404 />} />
+        </Routes>
+        <Tareas/>
+        <Contador/>
         <APIXML/>
         <APIFetch />
         <APIAxios/>
